@@ -1,0 +1,144 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+  margin: auto;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  min-height: 100%;
+  overflow-y: auto;
+  padding-bottom: 16px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+button {
+  font-size: calc(10px + 2vmin);
+}
+
+.Banner {
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  overflow-y: hidden;
+  background-image: url("/data/banner_continuum_conundrum.png");
+}
+
+.App-content {
+  max-width: 2150px;
+}
+
+.Sample-article {
+  max-width: 80vw;
+  margin: 16px auto;
+  font-size: calc(10px + 1vmin);
+}
+
+.heroes-avatar {
+  width: 256px;
+  height: 144px;
+  border: 1px solid rgb(20, 20, 20);
+  object-fit: cover;
+  background-position: center;
+  background-size: 130%;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: .3s;
+  z-index: 1;
+}
+
+.heroes-avatar:hover {
+  background-size: 100%;
+  transform: scale(1.25);
+  z-index: 5;
+}
+
+.aghanim-popup,
+.aghanim-popup-content,
+.aghanim-popup-overlay {
+  display: none;
+}
+
+.aghanim-popup-show {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.aghanim-popup-show .aghanim-popup-content {
+  display: inline-block;
+  /* min-width: 300px; */
+}
+
+.aghanim-popup-show .aghanim-popup-overlay {
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  opacity: 0.8;
+  background: rgb(28, 28, 28);
+}
+
+.shard-contents {
+  display: inline-block;
+  overflow-y: auto;
+  /* max-height: calc(100vh - 240px); */
+  max-height: calc(100vh - 100vh/6);
+  max-width: 1700px;
+}
+
+.legendary-shard {
+  border: 4px solid #9244FF;
+  min-width: 128px;
+  max-width: 128px;
+  min-height: 128px;
+  max-height: 128px;
+}
+
+@media screen and (max-width: 700px) {
+  .legendary-shard {
+    min-width: 56px;
+    max-width: 56px;
+    min-height: 56px;
+    max-height: 56px;
+  }
+}
+
+.legendary-shard-name {
+  color: #9244FF;
+  text-shadow: 1px 1px black, 1px 1px black, 1px 1px black, 0px 0px;
+}
