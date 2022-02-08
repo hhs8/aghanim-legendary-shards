@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react'
-import legendary from '../data/legendary.json'
+import legendaryJSON from '../data/legendary.json'
 import './App.css'
+
+const legendary : { [key: string] : any } = legendaryJSON;
 
 function App() {
   const [curHero, setCurHero] = useState("")
@@ -21,7 +23,7 @@ function App() {
     return Object.keys(legendary[attr]);
   });
   const allHeroes = (hr: string) => {
-    const heroObj = {};
+    const heroObj : { [key: string] : any } = {};
     attributes.forEach(attr => {
       Object.assign(heroObj, legendary[attr]);
     })
@@ -31,7 +33,7 @@ function App() {
   /**
    * METHODS
    */
-  const nameTransform = {
+  const nameTransform : { [key: string] : string } = {
     "queen_of_pain": "queenofpain",
     "magnus": "magnataur",
     "starbreaker": "fire_wreath",
