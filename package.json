@@ -6,7 +6,7 @@
     "dev": "vite",
     "dist": "tsc && vite build",
     "preview": "vite preview",
-    "predeploy": "npm run dist",
+    "predeploy": "npm run dist && node modifyPath.js",
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
