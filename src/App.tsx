@@ -135,7 +135,7 @@ function App() {
               return <div>
                 <div className="justify-center inline-block mt-6 mb-4">
                   <img src={attrImg} className="inline mx-3" width={'auto'} height={'auto'} />
-                  <span className='align-text-top'>{curAttr.toUpperCase()}</span>
+                  <span className='font-medium align-text-top'>{curAttr.toUpperCase()}</span>
                 </div>
                 <div id={flexId} className="flex flex-wrap justify-center gap-3 mb-4" style={{ minWidth: '100%' }}>
                   {
