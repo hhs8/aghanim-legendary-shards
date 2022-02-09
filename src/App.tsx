@@ -133,9 +133,9 @@ function App() {
               const flexId = curAttr + "-heroes";
 
               return <div>
-                <div className="flex justify-center p-2 m-6 mb-4">
-                  <img src={attrImg} className="mx-3" width={55} height={45} />
-                  <a>{curAttr.toUpperCase()}</a>
+                <div className="justify-center inline-block mt-6 mb-4">
+                  <img src={attrImg} className="inline mx-3" width={'auto'} height={'auto'} />
+                  <span className='align-text-top'>{curAttr.toUpperCase()}</span>
                 </div>
                 <div id={flexId} className="flex flex-wrap justify-center gap-3 mb-4" style={{ minWidth: '100%' }}>
                   {
@@ -148,9 +148,9 @@ function App() {
         </div>
         <div className={popupControl()}>
           <div className='absolute z-10 aghanim-popup-overlay' onClick={ closePopup }/>
-          <div className='absolute z-20 w-screen h-screen p-8 lg:p-24'>
+          <div className='absolute z-20 w-screen h-screen p-8'>
             <div className="z-20 inline-block text-left bg-gray-700 rounded-lg aghanim-popup-content">
-              <div className='p-6 pb-0 text-left lg:p-12 lg:pb-0 shard-contents'>{loadShards(curHero)}</div>
+              <div className='p-6 pb-0 text-left shard-contents'>{loadShards(curHero)}</div>
               <div className='py-3 text-center underline align-middle cursor-pointer' onClick={ closePopup }>CLOSE</div>
             </div>
           </div>

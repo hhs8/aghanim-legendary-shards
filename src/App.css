@@ -121,6 +121,13 @@ button {
   max-width: 1700px;
 }
 
+@media screen and (min-width: 701px) {
+  .shard-contents {
+    max-height: calc(100vh - 100vh/6);
+    max-width: calc(100vw - 100vw/12);
+  }
+}
+
 .legendary-shard {
   border: 4px solid #9244FF;
   min-width: 128px;
