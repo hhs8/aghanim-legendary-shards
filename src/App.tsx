@@ -45,7 +45,7 @@ function App() {
     "heavenly_grace": "repel",
     "spear_of_mars": "spear"
   }
-  const cleanseName = (hero: string) => {
+  const cleanseName = (hero: string): string => {
     let name = hero.toLowerCase().replaceAll(" ", "_");
     name = name.replaceAll("'", "");
     name = name.replaceAll("!", "");
