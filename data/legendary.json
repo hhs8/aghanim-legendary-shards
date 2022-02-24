@@ -248,7 +248,7 @@
     "Drow Ranger": {
       "Frost Arrows": {
         "Refracting Arrow": "Frost Arrows shatter on hit and send arrows at enemies within 400 range of the target. Sends 1 arrow per 1.0 second of Frost Arrows Slow Duration.",
-        "Bitterly Cold": "Whenever Frost Arrows Slow is applied to an enemy, the enemy gains a Bitterly Cold stack, dealing 75% of Frost Arrow's Bonus Damage per Bitterly Cold stack every second. Damage is increased to 150% if the target is moving. Bitterly Cold can build up to 4 stacks and lasts 200% of Frost Arrows Slow Duration.",
+        "Bitterly Cold ⭐": "Whenever Frost Arrows Slow is applied to an enemy, the enemy gains a Bitterly Cold stack, dealing 75% of Frost Arrow's Bonus Damage per Bitterly Cold stack every second. Damage is increased to 150% if the target is moving. Bitterly Cold can build up to 4 stacks and lasts 200% of Frost Arrows Slow Duration.",
         "Wave of Arrows": "Frost Arrows attacks have a 15% chance to send a wave of Multishot in the direction of attack."
       },
       "Gust": {
@@ -275,7 +275,7 @@
       },
       "Homing Missile": {
         "Missile Ride": "Any ally can saddle up and ride the Homing Missile. Enemies hit as the missile passes through them take the Missile's damage. Can not go over impassable terrain.",
-        "MiniMissiles": "On hitting its target, the Homing Missile splinters into up to 6 minimissiles aimed at other targets within 800 range. The minimissiles deal 50% of the original Homing Missile damage and stun.",
+        "MiniMissiles ⭐": "On hitting its target, the Homing Missile splinters into up to 6 minimissiles aimed at other targets within 800 range. The minimissiles deal 50% of the original Homing Missile damage and stun.",
         "Missile Strike ⭐": "On hitting it's target, the Homing Missile creates a Call Down at it's location, with 25% of it's radius and power."
       },
       "Flak Cannon": {
@@ -313,7 +313,7 @@
     },
     "Luna": {
       "Lucent Beam": {
-        "Diffusion": "Lucent Beam strikes gain a 250 area of effect, causing 30% of the effect on nearby units.",
+        "Diffusion ⭐": "Lucent Beam strikes gain a 250 area of effect, causing 30% of the effect on nearby units.",
         "Lunatic Frenzy": "Lucent Beam can target a friendly unit, granting it 20% lifesteal and attack speed by 30% of Lucent Beam's damage and causing temporary night. The duration is equal to 3x Lucent Beam's stun duration.",
         "Crescent Moon": "Allows Lucent Beam to be ground targeted. Lucent Beams release an instant attack on enemies in Moon Glaive's range of the initial target."
       },
@@ -328,8 +328,8 @@
         "Mark of the Moon": "Luna's primary attack applies a Mark for 6s which applies -10 Magic Resistance. When Luna casts Lucent Beam, all Marked units are also struck by beams."
       },
       "Eclipse": {
-        "Lunar Cycle": "Killing enemy units while Eclipse is active reduces Eclipse's current cooldown by 10 seconds each time.",
-        "Lunar Focus": "Gives Eclipse 3 more beams. Changes Eclipse so it can either be cast on an allied unit or on a point on the ground. If point cast, the radius decreases to 300 and the beams fire 200% as quickly.",
+        "Lunar Cycle ⭐": "Killing enemy units while Eclipse is active reduces Eclipse's current cooldown by 10 seconds each time.",
+        "Lunar Focus ⭐": "Gives Eclipse 3 more beams. Changes Eclipse so it can either be cast on an allied unit or on a point on the ground. If point cast, the radius decreases to 300 and the beams fire 200% as quickly.",
         "Into the Night": "During the night, friendly units gain bonus movement speed and evasion equal to 3x the Eclipse beam count, with Luna gaining double the benefit. Eclipse night lasts an additional 4 seconds."
       }
     },
@@ -364,12 +364,12 @@
       "Headshot": {
         "Full Bore": "Headshots apply a stacking 2 armor reduction that lasts 7 seconds.",
         "Gutshot": "Headshot gains an active component, allowing it to fire Sniper's attack with a guaranteed headshot in a cone in front of him. The knockback and slow are increased by 10x. Cooldown: 10, Mana Cost: 50.",
-        "Say Goodbye To Yer Head!": "On an attack, Sniper has a 50% of Headshot's base chance to fire a minor Asssassinate at the target with 25% power."
+        "Say Goodbye To Yer Head! ⭐": "On an attack, Sniper has a 50% of Headshot's base chance to fire a minor Asssassinate at the target with 25% power."
       },
       "Take Aim": {
         "Run & Gun": "Take Aim applies a weak purge to Sniper and changes the slow value by 100, causing Sniper to sprint instead of move slowly.",
-        "Shooting Gallery": "While Take Aim is active, each attack fired grants an additional stacking 50 attack speed for the duration.",
-        "Artillery": "While Take Aim is active, its bonus attack range is increased by 2x, and his attacks create instant 50% strength Shrapnel at the target's location that stacks with other sources of Shrapnel."
+        "Shooting Gallery ⭐": "While Take Aim is active, each attack fired grants an additional stacking 50 attack speed for the duration.",
+        "Artillery ⭐": "While Take Aim is active, its bonus attack range is increased by 2x, and his attacks create instant 50% strength Shrapnel at the target's location that stacks with other sources of Shrapnel."
       },
       "Assassinate": {
         "Buckshot": "Assassinate hits enemies in a cone behind the main target for 75% of Assassinate's damage.",
@@ -400,7 +400,7 @@
     },
     "Ursa": {
       "Earthshock": {
-        "Cannonball": "Earthshock applies 125 knockback and stuns for 1.5 seconds.",
+        "Cannonball ⭐": "Earthshock applies 125 knockback and stuns for 1.5 seconds.",
         "Digging In": "Earthshock applies and has its damage increased by Fury Swipes.",
         "Relentless": "Earthshock slows for an additional 2 seconds. Enemies that die under the Earthshock debuff give Ursa 3 stack(s) of Overpower."
       },
@@ -437,8 +437,8 @@
         "Shedding Skin": "Corrosive Skin becomes an aura that affects teammates within 900 range for half the effect."
       },
       "Viper Strike": {
-        "Antitoxin": "Viper Strike can target allies, healing them for the damage amount and buffing their movement and attack for the slow amounts.",
-        "Contamination": "Viper Strike becomes a no target spell. Any target walking within Viper Strike cast range for the duration of the ability will be struck by a Viper Strike every 0.4 seconds. The duration of the ability is equal to Viper Strike's overall debuff duration.",
+        "Antitoxin ⭐": "Viper Strike can target allies, healing them for the damage amount and buffing their movement and attack for the slow amounts.",
+        "Contamination ⭐": "Viper Strike becomes a no target spell. Any target walking within Viper Strike cast range for the duration of the ability will be struck by a Viper Strike every 0.4 seconds. The duration of the ability is equal to Viper Strike's overall debuff duration.",
         "Snakebite": "Viper Strike will bounce to 2 additional targets."
       }
     },
@@ -530,7 +530,7 @@
       "Chain Frost": {
         "Splitting Cold": "Each bounce of Chain Frost splits into two bolts if there are at least two possible targets. Half the total of the remaining bounces is transferred into each bolt.",
         "Friendship Chain": "Chain Frost can target and bounce to friendly heroes, granting them Frost Shield. Adds 4 extra bounces to Chain Frost.",
-        "Blast Chain": "Chain Frost bounces cause Frost Blast bursts around enemies."
+        "Blast Chain ⭐": "Chain Frost bounces cause Frost Blast bursts around enemies."
       }
     },
     "Lina": {
