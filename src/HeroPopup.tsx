@@ -38,7 +38,7 @@ export default function HeroPopup(props: HeroPopupProps) {
         className="absolute z-20 w-screen h-screen p-8 close-on-click"
         onClick={closePopupOutside}
       >
-        <div className="z-20 inline-block text-left bg-neutral-800 aghanim-popup-content">
+        <div className="z-20 inline-block text-left bg-neutral-900 aghanim-popup-content">
           <div className="flex text-center cursor-pointer">
             <div className="flex-auto"></div>
             <div className="flex">
@@ -52,7 +52,7 @@ export default function HeroPopup(props: HeroPopupProps) {
             <div className="flex-auto"></div>
 
             <div className="flex-none m-3 ml-0 text-2xl" onClick={closePopup}>
-              ×
+              ✖
             </div>
           </div>
           <div className="px-6 text-left shard-contents">{props.children}</div>

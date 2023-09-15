@@ -26,7 +26,7 @@ export default function RenderHeroTypes(props: RenderHeroTypesProps) {
                 width={"auto"}
                 height={"auto"}
               />
-              <span className="font-medium align-text-top font-trajan-pro">
+              <span className="text-2xl align-middle font-trajan-pro">
                 {curAttr.toUpperCase()}
               </span>
             </div>

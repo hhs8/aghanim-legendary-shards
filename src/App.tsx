@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import Announcement from "./Announcement";
 import RenderHeroTypes from "./RenderHeroTypes";
 import HeroPopup from "./HeroPopup";
 import legendaryJSON from "../data/legendary.json";
@@ -51,20 +52,21 @@ function App() {
    * Main app
    */
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="App bg-neutral-800">
+      <header>
+        <Announcement />
         <div className="Banner" />
-        <div className="mx-auto App-content">
-          <RenderHeroTypes
-            setCurHero={setCurHero}
-            heroesByAttributes={heroesByAttributes}
-            attributes={attributes}
-          />
-        </div>
+      </header>
+      <div className="mx-auto text-white">
+        <RenderHeroTypes
+          setCurHero={setCurHero}
+          heroesByAttributes={heroesByAttributes}
+          attributes={attributes}
+        />
         <HeroPopup hero={curHero} popupFlag={popupFlag} closePopup={closePopup}>
           <HeroShards allHeroes={allHeroes} hero={curHero} />
         </HeroPopup>
-      </header>
+      </div>
     </div>
   );
 }
