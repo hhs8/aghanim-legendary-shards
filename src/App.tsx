@@ -61,7 +61,7 @@ function App() {
             attributes={attributes}
           />
         </div>
-        <HeroPopup popupFlag={popupFlag} closePopup={closePopup}>
+        <HeroPopup hero={curHero} popupFlag={popupFlag} closePopup={closePopup}>
           <HeroShards allHeroes={allHeroes} hero={curHero} />
         </HeroPopup>
       </header>

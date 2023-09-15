@@ -5,6 +5,9 @@ interface HeroShardsProps {
   allHeroes: Function;
 }
 
+const cdnSkillImageLink =
+  "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/";
+
 export default function HeroShards(props: HeroShardsProps) {
   if (!props.hero) {
     return <></>;
@@ -15,6 +18,10 @@ export default function HeroShards(props: HeroShardsProps) {
     <>
       {skillNames.map((skill, idx) => {
         let heroName = cleanseName(props.hero);
+
+        // sand king is an odd case
+        // where it's hero name has an underscore
+        // but the underscore is removed from hero name when used for ability name
         if (heroName == "sand_king") {
           heroName = "sandking";
         }
@@ -25,10 +32,7 @@ export default function HeroShards(props: HeroShardsProps) {
             <div className="mr-6">
               <img
                 className="legendary-shard"
-                src={
-                  "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/abilities/" +
-                  skillImg
-                }
+                src={cdnSkillImageLink + skillImg}
               />
             </div>
             <div>

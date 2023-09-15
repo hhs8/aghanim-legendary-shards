@@ -18,7 +18,7 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: rgb(38, 38, 38);
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
@@ -65,12 +65,12 @@ button {
 }
 
 .heroes-avatar {
-  width: 256px;
+  width: 144px;
   height: 144px;
   border: 1px solid rgb(20, 20, 20);
   object-fit: cover;
   background-position: center;
-  background-size: 130%;
+  background-size: 200%;
   background-repeat: no-repeat;
   cursor: pointer;
   transition: .3s;
@@ -78,7 +78,7 @@ button {
 }
 
 .heroes-avatar:hover {
-  background-size: 100%;
+  background-size: 185%;
   transform: scale(1.25);
   z-index: 5;
 }
@@ -100,6 +100,7 @@ button {
 
 .aghanim-popup-show .aghanim-popup-content {
   display: inline-block;
+  filter: drop-shadow(0px 0px 12px rgb(8, 8, 8));
   /* min-width: 300px; */
 }
 
@@ -147,6 +148,13 @@ button {
   }
 }
 
+.shard-hero-avatar {
+  min-width: 48px;
+  max-width: 48px;
+  min-height: 48px;
+  max-height: 48px;
+}
+
 .legendary-shard-name {
   color: #9244FF;
 }
@@ -167,5 +175,5 @@ button {
 }
 
 .font-trajan-pro {
-  font-family: fontTrajanPro;
+  font-family: fontTrajanPro, sans-serif;
 }
