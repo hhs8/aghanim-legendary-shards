@@ -1,6 +1,6 @@
 /**
  * Translations of names for loading images
- * due to dota2 devs not updating the file names to new skill/hero names
+ * due to inconsistency in file names and skill/hero names
  */
 const nameTranslate : { [key: string] : string } = {
   "queen_of_pain": "queenofpain",

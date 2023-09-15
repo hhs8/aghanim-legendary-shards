@@ -21,8 +21,8 @@ export default function HeroShards(props: HeroShardsProps) {
         const skillImg = heroName + "_" + cleanseName(skill) + ".png";
 
         return (
-          <div key={idx} className="flex mb-8 text-base">
-            <div className="mr-6 text-xl font-semibold uppercase lg:mr-12">
+          <div key={idx} className="flex my-8 text-base">
+            <div className="mr-6">
               <img
                 className="legendary-shard"
                 src={
@@ -32,16 +32,18 @@ export default function HeroShards(props: HeroShardsProps) {
               />
             </div>
             <div>
-              <div className="inline-block px-2 mb-1 text-xl font-semibold uppercase bg-gray-500 rounded-md">
+              <div className="inline-block text-lg text-gray-200 underline uppercase font-skill">
                 {skill}
               </div>
               {Object.keys(heroSkills[skill]).map((shard, shardIdx) => {
                 return (
                   <div key={shardIdx} className="">
-                    <div className="text-xl font-semibold legendary-shard-name">
+                    <div className="text-2xl uppercase legendary-shard-name font-skill">
                       {shard}
                     </div>
-                    <div>{heroSkills[skill][shard]}</div>
+                    <div className="pb-2 font-description">
+                      {heroSkills[skill][shard]}
+                    </div>
                   </div>
                 );
               })}
