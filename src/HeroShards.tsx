@@ -29,7 +29,7 @@ export default function HeroShards(props: HeroShardsProps) {
 
         return (
           <div key={idx} className="flex my-8 text-base">
-            <div className="mr-6">
+            <div className="inline mr-6 lg:block">
               <img
                 className="legendary-shard"
                 src={cdnSkillImageLink + skillImg}

@@ -39,7 +39,7 @@ export default function HeroPopup(props: HeroPopupProps) {
         onClick={closePopupOutside}
       >
         <div className="z-20 inline-block text-left bg-neutral-900 aghanim-popup-content">
-          <div className="flex text-center cursor-pointer">
+          <div className="flex text-center border-b-2 cursor-pointer bg-neutral-800">
             <div className="flex-auto"></div>
             <div className="flex">
               <RenderHeroes
