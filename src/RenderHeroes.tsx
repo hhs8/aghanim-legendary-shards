@@ -1,4 +1,4 @@
-import { cleanseName } from "./helper";
+import { cleanseName } from "./utils/helper";
 
 interface RenderHeroesProps {
   setCurHero: Function;

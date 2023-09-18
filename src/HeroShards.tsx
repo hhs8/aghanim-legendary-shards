@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { cleanseName } from "./helper";
+import { cleanseName } from "./utils/helper";
 import { isDesktop, isMobileOnly } from "react-device-detect";
 
 interface HeroShardsProps {
