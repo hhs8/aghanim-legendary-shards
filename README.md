@@ -5,4 +5,4 @@ This is a fun side project made with ReactJS & TailwindCSS to list all the **Leg
 
 ## Live site
 
-[Link to the live site](https://hhshiki.github.io/aghanim-legendary-shards)
+[Link to the live site](https://aghanim-2021.hohonsing.com)
