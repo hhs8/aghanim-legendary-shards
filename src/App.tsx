@@ -48,6 +48,11 @@ function App() {
     }
   });
 
+  const year = () => {
+    let date = new Date();
+    return date.getFullYear();
+  };
+
   /**
    * Main app
    */
@@ -71,6 +76,23 @@ function App() {
           <HeroShards allHeroes={allHeroes} hero={curHero} />
         </HeroPopup>
       </div>
+      <footer>
+        <div className="flex justify-center p-5 text-neutral-200 bg-neutral-900 font-description">
+          <img
+            src="/data/github-mark-white.svg"
+            width="24"
+            height="24"
+            style={{ maxHeight: 24 }}
+            className="mr-2"
+          />
+          <a
+            href="https://github.com/hhs5"
+            className="duration-200 ease-linear hover:text-orange-400"
+          >
+            Honsing, {year()}
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }
