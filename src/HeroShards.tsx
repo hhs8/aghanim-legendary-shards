@@ -1,5 +1,5 @@
 import { cleanseName } from "./helper";
-import { isBrowser, isMobile } from "react-device-detect";
+import { isDesktop, isMobileOnly } from "react-device-detect";
 
 interface HeroShardsProps {
   hero: string;
@@ -52,24 +52,31 @@ export default function HeroShards(props: HeroShardsProps) {
           heroName = "sandking";
         }
         const skillImg = heroName + "_" + cleanseName(skill) + ".png";
+        const skillImgClass = isDesktop
+          ? "legendary-shard"
+          : "legendary-shard legendary-shard-mobile";
+        const skillNameClass = isDesktop
+          ? ""
+          : "flex items-center justify-center";
 
         return (
           <div key={idx} className="my-8 text-base ">
             <div className="flex">
               <div className="inline mr-6 lg:block">
                 <img
-                  className="legendary-shard"
+                  className={skillImgClass}
                   src={cdnSkillImageLink + skillImg}
                 />
               </div>
-              <div>
+              <div className={skillNameClass}>
                 <div className="text-xl text-gray-200 uppercase font-skill">
                   {skill}
                 </div>
-                {renderShards(skill, isBrowser)}
+                {renderShards(skill, isDesktop)}
               </div>
             </div>
-            <div className="mt-6">{renderShards(skill, isMobile)}</div>
+
+            <div className="mt-6">{renderShards(skill, isMobileOnly)}</div>
           </div>
         );
       })}
