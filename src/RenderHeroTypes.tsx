@@ -18,21 +18,23 @@ export default function RenderHeroTypes(props: RenderHeroTypesProps) {
         const flexId = curAttr + "-heroes";
 
         return (
-          <div key={idx}>
-            <div className="justify-center inline-block mt-6 mb-4">
+          <div key={idx} className="my-8">
+            <div className="flex my-4 attribute-name">
+              <div className="flex-auto" />
               <img
                 src={attrImg}
                 className="inline mx-3"
                 width={"auto"}
                 height={"auto"}
               />
-              <span className="text-2xl align-middle font-trajan-pro">
+              <div className="my-2 text-2xl font-trajan-pro">
                 {curAttr.toUpperCase()}
-              </span>
+              </div>
+              <div className="flex-auto" />
             </div>
             <div
               id={flexId}
-              className="flex flex-wrap justify-center gap-3 mb-4"
+              className="flex flex-wrap justify-center gap-3"
               style={{ minWidth: "100%" }}
             >
               <RenderHeroes setCurHero={props.setCurHero} heroes={heroes} />

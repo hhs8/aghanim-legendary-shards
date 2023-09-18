@@ -7,7 +7,7 @@ export default function Announcement() {
   };
 
   return (
-    <div className={"flex w-full text-gray-400 bg-neutral-900"}>
+    <div className={"flex text-sm text-gray-400 bg-neutral-900"}>
       <p className="flex-auto" />
       <p>
         📢 The event has ended on February 2022. There are some mods available
