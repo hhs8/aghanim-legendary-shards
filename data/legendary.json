@@ -292,7 +292,7 @@
     "Juggernaut": {
       "Blade Fury": {
         "Fury Sparks ⭐": "Blade Fury deals increased damage to enemies the farther they are from Juggernaut. For every 200 range from Juggernaut, Blade Fury deals 100% increased damage.",
-        "Fury Force ⭐💫": "Blade Fury creates a duplicate at the cast location that gently pulls enemies in and deals 50% damage.",
+        "Fury Force ⭐": "Blade Fury creates a duplicate at the cast location that gently pulls enemies in and deals 50% damage.",
         "Flourishing Sweep ⭐": "Blade Dance critical hits send a flying Blade Fury that travels 800 units at 250 speed. Only one flying Blade Fury can exist at a time."
       },
       "Healing Ward": {
@@ -301,19 +301,19 @@
         "Zen Ward": "Juggernaut gains the ability to summon a Zen Ward which regenerates mana at the same rate Healing Ward regenerates health and gives an armor buff equal to twice Healing Ward's health percentage."
       },
       "Blade Dance": {
-        "Up-Tempo ⭐💫": "Blade Dance critical hits reduce the cooldown of the ability with the longest remaining cooldown by 1.5 seconds.",
+        "Up-Tempo ⭐": "Blade Dance critical hits reduce the cooldown of the ability with the longest remaining cooldown by 1.5 seconds.",
         "Double Time": "Blade Dance gains 2 charges of a short range teleport. The next 2 attacks after teleporting are rapid and long range. The teleport and bonus attacks have a range of 450. Recharges every 15s.",
         "Flashing Steel": "Blade Dance critical hits give Juggernaut a multiplicatively stacking 15% movespeed and 15% evasion buff that lasts 7 seconds. Max of 5 stacks. Unlocks max movement speed for Juggernaut while active."
       },
       "Omnislash": {
         "Omnislash Duet": "Omnislash can be cast on an ally and they will also cast Omnislash.",
-        "Dizzyslash ⭐💫": "Juggernaut casts Blade Fury for the full duration of Omnislash. In addition, Juggernaut casts a free Blade Fury at the end of Omnislash.",
-        "White-Hot Katana ⭐💫": "Juggernaut overheats his blade during Omnislash, mini stunning and igniting all enemies hit for 25% of his attack damage each second over 5 seconds and slowing them by 40%. When the Omnislash ends Juggernaut is invulnerable, phased, and disarmed for 2.5 seconds as the blade cools."
+        "Dizzyslash ⭐": "Juggernaut casts Blade Fury for the full duration of Omnislash. In addition, Juggernaut casts a free Blade Fury at the end of Omnislash.",
+        "White-Hot Katana ⭐": "Juggernaut overheats his blade during Omnislash, mini stunning and igniting all enemies hit for 25% of his attack damage each second over 5 seconds and slowing them by 40%. When the Omnislash ends Juggernaut is invulnerable, phased, and disarmed for 2.5 seconds as the blade cools."
       }
     },
     "Luna": {
       "Lucent Beam": {
-        "Diffusion ⭐💫": "Lucent Beam strikes gain a 250 area of effect, causing 30% of the effect on nearby units.",
+        "Diffusion ⭐": "Lucent Beam strikes gain a 250 area of effect, causing 30% of the effect on nearby units.",
         "Lunatic Frenzy": "Lucent Beam can target a friendly unit, granting it 20% lifesteal and attack speed by 30% of Lucent Beam's damage and causing temporary night. The duration is equal to 3x Lucent Beam's stun duration.",
         "Crescent Moon": "Allows Lucent Beam to be ground targeted. Lucent Beams release an instant attack on enemies in Moon Glaive's range of the initial target."
       },
@@ -328,8 +328,8 @@
         "Mark of the Moon": "Luna's primary attack applies a Mark for 6s which applies -10 Magic Resistance. When Luna casts Lucent Beam, all Marked units are also struck by beams."
       },
       "Eclipse": {
-        "Lunar Cycle ⭐💫": "Killing enemy units while Eclipse is active reduces Eclipse's current cooldown by 10 seconds each time.",
-        "Lunar Focus ⭐💫": "Gives Eclipse 3 more beams. Changes Eclipse so it can either be cast on an allied unit or on a point on the ground. If point cast, the radius decreases to 300 and the beams fire 200% as quickly.",
+        "Lunar Cycle ⭐": "Killing enemy units while Eclipse is active reduces Eclipse's current cooldown by 10 seconds each time.",
+        "Lunar Focus ⭐": "Gives Eclipse 3 more beams. Changes Eclipse so it can either be cast on an allied unit or on a point on the ground. If point cast, the radius decreases to 300 and the beams fire 200% as quickly.",
         "Into the Night": "During the night, friendly units gain bonus movement speed and evasion equal to 3x the Eclipse beam count, with Luna gaining double the benefit. Eclipse night lasts an additional 4 seconds."
       }
     },

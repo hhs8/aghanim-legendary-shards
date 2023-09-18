@@ -58,6 +58,10 @@ function App() {
         <div className="Banner" />
       </header>
       <div className="mx-auto text-white">
+        <div className="px-2 text-sm text-center bg-orange-400 text-neutral-50 font-description">
+          The marked skills have synergy with each other. Try out the
+          combinations and see what wonders they make!
+        </div>
         <RenderHeroTypes
           setCurHero={setCurHero}
           heroesByAttributes={heroesByAttributes}

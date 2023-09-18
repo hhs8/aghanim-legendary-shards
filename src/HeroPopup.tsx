@@ -1,5 +1,6 @@
 import { ReactElement } from "react";
 import RenderHeroes from "./RenderHeroes";
+import { render } from "react-dom";
 
 interface HeroPopupProps {
   hero: string;
@@ -39,7 +40,7 @@ export default function HeroPopup(props: HeroPopupProps) {
         onClick={closePopupOutside}
       >
         <div className="z-20 inline-block text-left bg-neutral-900 aghanim-popup-content">
-          <div className="flex text-center border-b-2 bg-neutral-800">
+          <div className="flex text-center border-b border-neutral-600 bg-neutral-800">
             <div className="flex-auto"></div>
             <div className="flex">
               <RenderHeroes
@@ -58,7 +59,7 @@ export default function HeroPopup(props: HeroPopupProps) {
               ✖
             </div>
           </div>
-          <div className="px-6 text-left shard-contents">{props.children}</div>
+          <div className="text-left shard-contents">{props.children}</div>
         </div>
       </div>
     </div>

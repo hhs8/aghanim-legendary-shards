@@ -18,7 +18,7 @@ export default function RenderHeroTypes(props: RenderHeroTypesProps) {
         const flexId = curAttr + "-heroes";
 
         return (
-          <div key={idx} className="my-8">
+          <div key={idx} className="mt-4 mb-12">
             <div className="flex my-4 attribute-name">
               <div className="flex-auto" />
               <img
