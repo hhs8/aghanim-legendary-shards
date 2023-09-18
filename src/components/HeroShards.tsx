@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { cleanseName } from "../utils/helper";
 import { isDesktop, isMobileOnly } from "react-device-detect";
+import starSvg from "../data/star.svg";
 
 interface HeroShardsProps {
   hero: string;
@@ -19,12 +20,7 @@ const replaceStar = (skillName: string) => {
   return (
     <>
       {processedSkill}
-      <img
-        width="26"
-        height="26"
-        className="pb-2 pl-2"
-        src="/src/data/star.svg"
-      ></img>
+      <img width="26" height="26" className="pb-2 pl-2" src={starSvg}></img>
     </>
   );
 };

@@ -4,6 +4,7 @@ import RenderHeroTypes from "./components/RenderHeroTypes";
 import HeroPopup from "./components/HeroPopup";
 import HeroShards from "./components/HeroShards";
 import legendaryJSON from "./data/legendary.json";
+import githubSvg from "./data/github-mark-white.svg";
 import "./App.css";
 
 const legendary: { [key: string]: any } = legendaryJSON;
@@ -79,14 +80,14 @@ function App() {
       <footer>
         <div className="flex justify-center p-5 text-neutral-200 bg-neutral-900 font-description">
           <img
-            src="/src/data/github-mark-white.svg"
+            src={githubSvg}
             width="24"
             height="24"
             style={{ maxHeight: 24 }}
             className="mr-2"
           />
           <a
-            href="https://github.com/hhs5"
+            href="https://github.com/hhs5/aghanim-legendary-shards"
             className="duration-200 ease-linear hover:text-orange-400"
           >
             Honsing, {year()}
