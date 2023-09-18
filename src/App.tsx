@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
-import Announcement from "./Announcement";
-import RenderHeroTypes from "./RenderHeroTypes";
-import HeroPopup from "./HeroPopup";
+import Announcement from "./components/Announcement";
+import RenderHeroTypes from "./components/RenderHeroTypes";
+import HeroPopup from "./components/HeroPopup";
+import HeroShards from "./components/HeroShards";
 import legendaryJSON from "./data/legendary.json";
 import "./App.css";
-import HeroShards from "./HeroShards";
 
 const legendary: { [key: string]: any } = legendaryJSON;
 
