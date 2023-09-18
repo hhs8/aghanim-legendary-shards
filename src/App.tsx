@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import Announcement from "./Announcement";
 import RenderHeroTypes from "./RenderHeroTypes";
 import HeroPopup from "./HeroPopup";
-import legendaryJSON from "../data/legendary.json";
+import legendaryJSON from "./data/legendary.json";
 import "./App.css";
 import HeroShards from "./HeroShards";
 
@@ -79,7 +79,7 @@ function App() {
       <footer>
         <div className="flex justify-center p-5 text-neutral-200 bg-neutral-900 font-description">
           <img
-            src="/data/github-mark-white.svg"
+            src="/src/data/github-mark-white.svg"
             width="24"
             height="24"
             style={{ maxHeight: 24 }}

@@ -23,7 +23,7 @@ const replaceStar = (skillName: string) => {
         width="26"
         height="26"
         className="pb-2 pl-2"
-        src="/data/star.svg"
+        src="/src/data/star.svg"
       ></img>
     </>
   );

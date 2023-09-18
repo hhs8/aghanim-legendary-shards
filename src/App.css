@@ -44,7 +44,7 @@ button {
   background-size: cover;
   background-position: center;
   overflow-y: hidden;
-  background-image: url("/data/banner_continuum_conundrum.png");
+  background-image: url("/src/data/banner_continuum_conundrum.png");
 }
 
 .Sample-article {
@@ -158,7 +158,7 @@ button {
 
 @font-face {
   font-family: fontTrajanPro;
-  src: url(/data/TrajanPro-Bold.otf);
+  src: url(/src/data/TrajanPro-Bold.otf);
 }
 
 .font-trajan-pro {
