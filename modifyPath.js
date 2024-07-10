@@ -1,6 +1,8 @@
 const fs = require('fs');
 const glob = require("glob");
 
+// only for deployment on github.io
+// not applicable for custom domain
 function modifyPath(fileName) {
   if (fileName.indexOf(".") == -1) {
     return;

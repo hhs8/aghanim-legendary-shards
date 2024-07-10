@@ -6,8 +6,8 @@
     "dev": "vite",
     "dist": "tsc && vite build",
     "preview": "vite preview",
-    "predeploy": "npm run dist && node modifyPath.js",
-    "deploy": "gh-pages -d dist"
+    "deploy": "npm run dist && node modifyPath.js && gh-pages -d dist",
+    "deploy-custom-domain": "npm run dist && gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/forms": "^0.5.6",
