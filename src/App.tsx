@@ -87,7 +87,7 @@ function App() {
             className="mr-2"
           />
           <a
-            href="https://github.com/hhs5/aghanim-legendary-shards"
+            href="https://github.com/hhs8/aghanim-legendary-shards"
             className="duration-200 ease-linear hover:text-orange-400"
           >
             Honsing, {year()}
