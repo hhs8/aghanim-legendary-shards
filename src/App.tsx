@@ -17,7 +17,6 @@ function App() {
    * HOOKS
    */
   useEffect(() => {
-    console.log("Current hero changed to -", curHero);
     if (curHero) {
       setPopupFlag(true);
     }
@@ -80,8 +79,8 @@ function App() {
   };
   
   useEffect(() => {
-   window.addEventListener("keydown", handleKeyEvent);
-   return () => window.removeEventListener("keydown", handleKeyEvent);
+    window.addEventListener("keydown", handleKeyEvent);
+    return () => window.removeEventListener("keydown", handleKeyEvent);
   });
 
   // window.addEventListener("keydown", handleKeyEvent);
