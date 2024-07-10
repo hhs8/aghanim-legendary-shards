@@ -17,7 +17,7 @@ function App() {
    * HOOKS
    */
   useEffect(() => {
-    // console.log(curHero, '- Has changed')
+    console.log("Current hero changed to -", curHero);
     if (curHero) {
       setPopupFlag(true);
     }
@@ -34,6 +34,10 @@ function App() {
     });
     return heroObj[hr];
   };
+  const heroList: string[] = [];
+  heroesByAttributes.forEach(heroes => {
+    heroList.push(...heroes);
+  }); 
 
   /**
    * METHODS
@@ -43,11 +47,44 @@ function App() {
     setPopupFlag(false);
   };
 
-  window.addEventListener("keydown", (e) => {
+  enum Direction {Left, Right};
+
+  const cycleByArrowKey = (order: Direction) => {
+    if (curHero === "") {
+      return;
+    }
+    let index = heroList.indexOf(curHero);
+    let movement = ( order === Direction.Left )
+      ? -1
+      : 1;
+    index += movement;
+    if (index < 0) {
+      index = heroList.length - 1;
+    }
+    else if (index == heroList.length) {
+      index = 0;
+    }
+    setCurHero(heroList[index]);
+  }
+
+  const handleKeyEvent = (e: KeyboardEvent) => {
     if (e.key === "Escape") {
       closePopup();
     }
+    if (e.key === "ArrowLeft") {
+      cycleByArrowKey(Direction.Left);
+    }
+    if (e.key === "ArrowRight") {
+      cycleByArrowKey(Direction.Right);
+    }
+  };
+  
+  useEffect(() => {
+   window.addEventListener("keydown", handleKeyEvent);
+   return () => window.removeEventListener("keydown", handleKeyEvent);
   });
+
+  // window.addEventListener("keydown", handleKeyEvent);
 
   const year = () => {
     let date = new Date();
@@ -90,7 +127,7 @@ function App() {
             href="https://github.com/hhs8/aghanim-legendary-shards"
             className="duration-200 ease-linear hover:text-orange-400"
           >
-            Honsing, {year()}
+            Honsing, 2022-{year()}
           </a>
         </div>
       </footer>
