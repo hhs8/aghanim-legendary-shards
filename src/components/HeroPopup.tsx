@@ -1,6 +1,5 @@
 import { ReactElement } from "react";
 import RenderHeroes from "./RenderHeroes";
-import { render } from "react-dom";
 
 interface HeroPopupProps {
   hero: string;
@@ -13,7 +12,7 @@ const emptyFunction = () => {
   return;
 };
 
-export default function HeroPopup(props: HeroPopupProps) {
+export default function HeroPopup(props: Readonly<HeroPopupProps>) {
   const popupControl = () => {
     let className = "aghanim-popup";
     if (props.popupFlag) {

@@ -9,7 +9,7 @@ interface RenderHeroTypesProps {
 const cdnHeroImageLink =
   "https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota_react/icons/hero_";
 
-export default function RenderHeroTypes(props: RenderHeroTypesProps) {
+export default function RenderHeroTypes(props: Readonly<RenderHeroTypesProps>) {
   return (
     <>
       {props.heroesByAttributes.map((heroes: string[], idx) => {

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Announcement from "./components/Announcement";
+import Guide from "./components/Guide";
 import RenderHeroTypes from "./components/RenderHeroTypes";
 import HeroPopup from "./components/HeroPopup";
 import HeroShards from "./components/HeroShards";
@@ -12,12 +13,14 @@ const legendary: { [key: string]: any } = legendaryJSON;
 function App() {
   const [curHero, setCurHero] = useState("");
   const [popupFlag, setPopupFlag] = useState(false);
+  const [guideFlag, setGuideFlag] = useState(false);
 
   /**
    * HOOKS
    */
   useEffect(() => {
     if (curHero) {
+      setGuideFlag(false);
       setPopupFlag(true);
     }
   }, [curHero]);
@@ -34,9 +37,9 @@ function App() {
     return heroObj[hr];
   };
   const heroList: string[] = [];
-  heroesByAttributes.forEach(heroes => {
+  heroesByAttributes.forEach((heroes) => {
     heroList.push(...heroes);
-  }); 
+  });
 
   /**
    * METHODS
@@ -46,25 +49,33 @@ function App() {
     setPopupFlag(false);
   };
 
-  enum Direction {Left, Right};
+  const openGuide = () => {
+    setGuideFlag(true);
+  };
+
+  const closeGuide = () => {
+    setGuideFlag(false);
+  };
+
+  enum Direction {
+    Left,
+    Right,
+  }
 
   const cycleByArrowKey = (order: Direction) => {
     if (curHero === "") {
       return;
     }
     let index = heroList.indexOf(curHero);
-    let movement = ( order === Direction.Left )
-      ? -1
-      : 1;
+    let movement = order === Direction.Left ? -1 : 1;
     index += movement;
     if (index < 0) {
       index = heroList.length - 1;
-    }
-    else if (index == heroList.length) {
+    } else if (index == heroList.length) {
       index = 0;
     }
     setCurHero(heroList[index]);
-  }
+  };
 
   const handleKeyEvent = (e: KeyboardEvent) => {
     if (e.key === "Escape") {
@@ -77,13 +88,11 @@ function App() {
       cycleByArrowKey(Direction.Right);
     }
   };
-  
+
   useEffect(() => {
     window.addEventListener("keydown", handleKeyEvent);
     return () => window.removeEventListener("keydown", handleKeyEvent);
   });
-
-  // window.addEventListener("keydown", handleKeyEvent);
 
   const year = () => {
     let date = new Date();
@@ -102,6 +111,12 @@ function App() {
       <div className="w-full px-2 text-sm text-center bg-orange-400 text-neutral-50 font-description">
         The marked skills have synergy with each other. Try out the combinations
         and see what wonders they make!
+        <div className="float-right w-5 h-5 m-1 leading-tight border-2 rounded-full cursor-pointer select-none border-slate-50">
+          <p className="select-none" onClick={openGuide}>
+            ?
+          </p>
+          <Guide guideFlag={guideFlag} closeGuide={closeGuide} />
+        </div>
       </div>
       <div className="flex-auto mx-auto text-white">
         <RenderHeroTypes
